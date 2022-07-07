@@ -126,7 +126,9 @@ namespace util
 #elif defined(__NetBSD__)
 		pthread_setname_np(pthread_self(), "%s", (void *)name);
 #elif !defined(__gnu_hurd__)
+#	ifndef _WIN32
 		pthread_setname_np(pthread_self(), name);
+#	endif
 #endif
 	}
 

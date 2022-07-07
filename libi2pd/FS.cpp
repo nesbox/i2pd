@@ -9,6 +9,8 @@
 #include <algorithm>
 #include <boost/filesystem.hpp>
 
+#include "Garlic.h"
+
 #ifdef _WIN32
 #include <shlobj.h>
 #include <windows.h>
@@ -18,7 +20,6 @@
 #include "Base.h"
 #include "FS.h"
 #include "Log.h"
-#include "Garlic.h"
 
 namespace i2p {
 namespace fs {

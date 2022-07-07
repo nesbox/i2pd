@@ -36,6 +36,9 @@
 #define le64toh(x) OSSwapLittleToHostInt64(x)
 
 #elif defined(_WIN32)
+
+#include <stdlib.h>
+
 #define htobe16(x) __builtin_bswap16(x)
 #define htole16(x) (x)
 #define be16toh(x) __builtin_bswap16(x)
